@@ -12,9 +12,9 @@ class Category extends Model
     ];
 
 
-      public function recipe()
+      public function recipes()
     {
-        return $this->hasMany(Recipe::class);
+        return $this->belongsToMany(Recipe::class,'recipe_category','category_id');
     }
 
 }

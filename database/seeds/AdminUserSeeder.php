@@ -19,14 +19,8 @@ class AdminUserSeeder extends Seeder
             'password' => bcrypt('12345678'),
         ]);
 
-          $user =  User::create([
-            'name' => 'user',
-            'email' => 'user@app.com',
-            'password' => bcrypt('12345678'),
-        ]);
 
 
-        $super_admin->attachRole('super_admin');
 
 
 

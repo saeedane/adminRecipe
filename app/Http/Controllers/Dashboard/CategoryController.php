@@ -54,7 +54,7 @@ class CategoryController extends Controller
 
     public function show(){
 
-      $category = Category::paginate(1);
+      $category = Category::paginate(5);
 
       return view('dashboard.category.show',compact('category'));
     }

@@ -2058,7 +2058,7 @@ input[type="file"] {
   opacity: 0;
     bottom: 78px;
   width: 100%;
-    height: 38%;
+    height: auto;
 
 }
 
@@ -2071,7 +2071,7 @@ justify-content: center;
 
 }
 
-.file-input label {
+.image-preview img  {
   display: block;
   position: relative;
   width: 350px;
@@ -14892,7 +14892,7 @@ be a descendant of the grid when it is being dragged.
   min-height: calc(100vh - 50px);
   margin-top: 50px;
   padding: 30px;
-  background-color: #E5E5E5;
+  background-color: #f8f9fc;
   -webkit-transition: margin-left 0.3s ease;
   -o-transition: margin-left 0.3s ease;
   transition: margin-left 0.3s ease;
@@ -14948,10 +14948,12 @@ be a descendant of the grid when it is being dragged.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000000;
+  background-color: #ffffff;
   z-index: 1030;
   padding-right: 15px;
   height: 63px;
+  box-shadow: 0 0.15rem 1.75rem 0 rgb(58 59 69 / 15%) !important;
+
 }
 
 @media (min-width: 768px) {
@@ -14998,7 +15000,7 @@ be a descendant of the grid when it is being dragged.
 .app-sidebar__toggle {
   padding: 0 15px;
   font-family: fontAwesome;
-  color: #fedb8f;
+  color: #000000;
   line-height: 3;
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
@@ -15019,8 +15021,8 @@ be a descendant of the grid when it is being dragged.
 }
 
 .app-sidebar__toggle:focus, .app-sidebar__toggle:hover {
-  color: #fff;
-  background-color: #00635a;
+  color: #ddb04e;
+  background-color: transparent;
   text-decoration: none;
 }
 
@@ -15046,15 +15048,15 @@ be a descendant of the grid when it is being dragged.
   display: block;
   padding: 15px;
   line-height: 33px;
-  color: #fedb8f;
+  color: #000000;
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
 .app-nav__item:hover, .app-nav__item:focus {
-  background: rgba(0, 0, 0, 0.1);
-  color: #f6f6f6;
+  background: transparent;
+  color: #ddb04e;
 }
 
 .app-search {
